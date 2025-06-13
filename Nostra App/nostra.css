@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "body", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  box-shadow: 0px 10px 5px 0px rgba(191, 184, 191, 1);
+}
+
+.naventries {
+  display: flex;
+  gap: 20px;
+}
+
+.naventries a {
+  color: black;
+  text-decoration: none;
+}
+
+.naventries a:hover {
+  text-decoration: underline;
+}
+
+.mainnav-icon {
+  display: none;
+}
+
+.sidenav {
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+
+  left: -60%;
+  transition: 2s;
+}
+
+.side-entry a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.side-entry {
+  margin-bottom: 20px;
+}
+
+.side-entry a:hover {
+  text-decoration: underline;
+}
+
+.sidenav-icon {
+  color: white;
+  text-align: right;
+  padding: 10px;
+}
+
+.aboutshop {
+  padding: 40px;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 20px;
+  justify-content: center;
+}
+
+.aboutdata {
+  padding: 5px;
+}
+
+.aboutshopbutton {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+}
+
+.midarea1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+}
+.midarea2 {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.midarea2in {
+  background-color: #d7dbd8;
+  padding: 10px;
+  margin: 10px;
+}
+
+.newarrival h3 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.newarrivalimages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.newarrivalimage {
+  padding: 10px;
+  margin: 10px;
+  flex-basis: 20%;
+  position: relative;
+}
+.newarrbutt {
+  background-color: #ebf0ec;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+
+.mostwanted h3 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.mostwantedimages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mostwantedimage {
+  padding: 10px;
+  margin: 10px;
+  flex-basis: 20%;
+  position: relative;
+}
+
+.joinpage {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinpage h3,
+p,
+input,
+button {
+  padding: 5px;
+  margin: 5px;
+}
+
+.joinpage input {
+  width: 50%;
+  border: solid;
+}
+.joinpage button {
+  background-color: black;
+  color: #ebf0ec;
+  border: none;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.searchin {
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 270px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.dresscollections {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.dress {
+  flex-basis: 30%;
+  padding: 5px;
+  margin: 5px;
+  justify-content: space-around;
+}
+.contactdetails {
+  padding: 40px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+  color: #d7dbd8;
+  border-radius: 20px;
+}
+
+.contactdetails div {
+  margin-top: 20px;
+}
+
+.ans {
+  margin-top: 20px;
+  width: 60%;
+  height: 40%;
+}
+
+.butt {
+  margin-top: 50px;
+  border-radius: 2px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+
+.content {
+  margin-top: 20px;
+  width: 60%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .mainnav-icon {
+    display: block;
+  }
+
+  .naventries {
+    display: none;
+  }
+  .aboutshopimage {
+    display: none;
+  }
+  .midarea2 {
+    flex-direction: column;
+  }
+  .midarea1 {
+    display: none;
+  }
+}
